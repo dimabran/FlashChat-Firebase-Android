@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "428748242369",
+    "firebase_url": "https://chat-a8f23.firebaseio.com",
+    "project_id": "chat-a8f23",
+    "storage_bucket": "chat-a8f23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428748242369:android:4f73333f8670110a",
+        "android_client_info": {
+          "package_name": "com.londonappbrewery.chatbyDimon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428748242369-v88v3nrk8pub2gltibcnj35hbcn71f8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY6N2UPCd_rviW0i_VOrXvwr6BhGQp6E4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
