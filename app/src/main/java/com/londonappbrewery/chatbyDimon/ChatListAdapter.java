@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -92,8 +93,8 @@ public class ChatListAdapter extends BaseAdapter{
             convertView = inflater.inflate(R.layout.chat_msg_row,parent,false);
 
             final ViewHolder holder = new ViewHolder();
-            holder.authorName = (TextView) convertView.findViewById(R.id.author);
-            holder.body = (TextView) convertView.findViewById(R.id.message);
+            holder.authorName = convertView.findViewById(R.id.author);
+            holder.body = convertView.findViewById(R.id.message);
             holder.params = (LinearLayout.LayoutParams) holder.authorName.getLayoutParams();
             convertView.setTag(holder);
 
@@ -118,7 +119,7 @@ public class ChatListAdapter extends BaseAdapter{
     {
         if(isItMe){
             holder.params.gravity = Gravity.END;
-            holder.authorName.setTextColor(R.color.dark_green);
+            holder.authorName.setTextColor(Color.GREEN);
             holder.body.setBackgroundResource(R.drawable.bubble2);
         } else{
             holder.params.gravity = Gravity.START;
